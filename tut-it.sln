@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{694C48D9-5135-51E5-8524-B1FA76E57D96}") = "tut-it", "Assembly-CSharp.csproj", "{565EE1B2-2142-B395-89B3-D7CD82E5BEC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{565EE1B2-2142-B395-89B3-D7CD82E5BEC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{565EE1B2-2142-B395-89B3-D7CD82E5BEC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{565EE1B2-2142-B395-89B3-D7CD82E5BEC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{565EE1B2-2142-B395-89B3-D7CD82E5BEC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

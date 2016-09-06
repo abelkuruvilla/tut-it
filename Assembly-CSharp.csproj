@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5570DE42-029C-99D1-3485-F63CFA06D234}</ProjectGuid>
+    <ProjectGuid>{565EE1B2-2142-B395-89B3-D7CD82E5BEC7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,12 +45,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\BallEnd.cs" />
-     <Compile Include="Assets\Scripts\BallScript.cs" />
-     <Compile Include="Assets\Scripts\Button.cs" />
-     <Compile Include="Assets\Scripts\ButtonScript.cs" />
      <Compile Include="Assets\Scripts\ResolutionScript.cs" />
-     <Compile Include="Assets\Scripts\SquareScript.cs" />
+     <Compile Include="Assets\Scripts\Test\BallEnd.cs" />
+     <Compile Include="Assets\Scripts\Test\BallScript.cs" />
+     <Compile Include="Assets\Scripts\Test\Button.cs" />
+     <Compile Include="Assets\Scripts\Test\ButtonScript.cs" />
+     <Compile Include="Assets\Scripts\Test\SquareScript.cs" />
+     <Compile Include="Assets\Scripts\TestScore.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>E:/Unity3D/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
