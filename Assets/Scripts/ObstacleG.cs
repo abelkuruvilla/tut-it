@@ -36,11 +36,12 @@ public class ObstacleG : MonoBehaviour {
 				generateObstacles (1);
 			}
 		}
-		if(g1!=null)
+
+		/*if(g1!=null)
 			checkEnds (1);
 		if(g2!=null)
 			checkEnds (2);
-
+		*/
 	}
 	
 
@@ -80,14 +81,21 @@ public class ObstacleG : MonoBehaviour {
 
 	bool checkPosition(int opt){
 		if (opt == 1) {
-			if (g1.transform.position.y <= 0f)
+			if (g1.transform.position.y <= 0f) {
+				g1.AddComponent<ObstacleDestroy> () ;
+				g1 = null;
 				return true;
+
+			}
 			else
 				return false;
 
 		} else if (opt == 2) {
-			if (g2.transform.position.y <= 0f)
+			if (g2.transform.position.y <= 0f) {
+				g2.AddComponent<ObstacleDestroy> ();
+				g2 =null;;
 				return true;
+			}
 			else
 				return false;
 		} else
@@ -95,7 +103,7 @@ public class ObstacleG : MonoBehaviour {
 
 	}
 
-	void checkEnds(int opt){
+	/*void checkEnds(int opt){
 
 		float edge = -Camera.main.WorldToScreenPoint (transform.position).y;
 		Bounds bound;
@@ -119,7 +127,7 @@ public class ObstacleG : MonoBehaviour {
 
 
 	}
-
+*/
 
 
 }
