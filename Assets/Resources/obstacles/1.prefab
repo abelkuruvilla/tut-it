@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &183964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 475478}
+  - 212: {fileID: 21256620}
+  - 50: {fileID: 5012384}
+  - 60: {fileID: 6016482}
+  m_Layer: 0
+  m_Name: 1
+  m_TagString: obstacle
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &475478
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183964}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!50 &5012384
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183964}
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &6016482
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183964}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: 2.8104522, y: -0.6644947}
+      - {x: 2.8019152, y: -1.4694415}
+      - {x: 1.61, y: -1.4499999}
+      - {x: 1.6059575, y: -1.4666219}
+      - {x: 1.6007248, y: -2.2871976}
+      - {x: 0.4204523, y: -2.2819152}
+      - {x: 0.41309237, y: -3.8776846}
+      - {x: 1.598103, y: -3.8803787}
+      - {x: 1.6069077, y: -4.6476846}
+      - {x: 2.803156, y: -4.6530414}
+      - {x: 2.8065848, y: -5.499681}
+      - {x: 4.0016026, y: -5.5100036}
+      - {x: 4, y: -0.65999997}
+    - - {x: -0.36823702, y: -0.7140362}
+      - {x: -0.3826691, y: 0.8701155}
+      - {x: -1.6014167, y: 0.88296556}
+      - {x: -1.5924621, y: 1.6910346}
+      - {x: -2.76141, y: 1.6909937}
+      - {x: -2.786079, y: 2.502784}
+      - {x: -4, y: 2.51}
+      - {x: -4, y: -2.47}
+      - {x: -4.0044317, y: -2.3240364}
+      - {x: -2.7671003, y: -2.331252}
+      - {x: -2.7630641, y: -1.4936409}
+      - {x: -1.5802801, y: -1.4945469}
+      - {x: -1.5786326, y: -0.72858334}
+    - - {x: 2.81, y: 5.6}
+      - {x: 2.8003356, y: 5.5940075}
+      - {x: 2.7955275, y: 4.746895}
+      - {x: 1.6103355, y: 4.741994}
+      - {x: 1.6123394, y: 3.9779959}
+      - {x: 0.41033566, y: 3.976328}
+      - {x: 0.41033554, y: 2.3803551}
+      - {x: 1.612196, y: 2.3741834}
+      - {x: 1.6110069, y: 1.5766829}
+      - {x: 2.8088229, y: 1.5524344}
+      - {x: 2.810997, y: 0.76901263}
+      - {x: 4.0043335, y: 0.7646789}
+      - {x: 4, y: 5.6}
+--- !u!212 &21256620
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183964}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: ca54749933a5ff24cba547abc1e86822, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 183964}
+  m_IsPrefabParent: 1

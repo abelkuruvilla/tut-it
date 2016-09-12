@@ -45,11 +45,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BallScript.cs" />
+     <Compile Include="Assets\Scripts\ButtonMethods.cs" />
+     <Compile Include="Assets\Scripts\HeartPointDestroy.cs" />
      <Compile Include="Assets\Scripts\ObstacleDestroy.cs" />
      <Compile Include="Assets\Scripts\ObstacleG.cs" />
+     <Compile Include="Assets\Scripts\PointGenerate.cs" />
      <Compile Include="Assets\Scripts\ResolutionScript.cs" />
      <Compile Include="Assets\Scripts\Test\BallEnd.cs" />
-     <Compile Include="Assets\Scripts\Test\BallScript.cs" />
      <Compile Include="Assets\Scripts\Test\Button.cs" />
      <Compile Include="Assets\Scripts\Test\ButtonScript.cs" />
      <Compile Include="Assets\Scripts\Test\SquareScript.cs" />

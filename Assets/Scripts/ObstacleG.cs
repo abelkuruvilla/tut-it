@@ -17,7 +17,7 @@ public class ObstacleG : MonoBehaviour {
 	void Start () {
 		
 		getObstacle ();
-		setSpeed (1f);
+		setSpeed (1.4f);
 		generateObstacles (1);
 
 
@@ -71,7 +71,7 @@ public class ObstacleG : MonoBehaviour {
 
 	void getObstacle(){
 
-		ob = Resources.LoadAll<GameObject> ("");
+		ob = Resources.LoadAll<GameObject> ("obstacles");
 
 		obstacle = ob.ToList ();
 
