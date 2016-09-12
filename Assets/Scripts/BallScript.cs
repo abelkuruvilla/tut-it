@@ -83,6 +83,7 @@ public class BallScript : MonoBehaviour {
 		gameObject.GetComponent<SpriteRenderer>().enabled=false;
 		particle.gameObject.transform.position = gameObject.transform.position;
 		particle.SetActive (true);
+
 		StartCoroutine (viewGO ());
 
 
@@ -114,6 +115,7 @@ public class BallScript : MonoBehaviour {
 		if (other.gameObject.tag == "heart") {
 			GameObject g = GameObject.Find ("InGameCanvas/Score");
 			g.SendMessage ("setScore",1);
+			Destroy (other.gameObject);
 
 
 		}
@@ -130,7 +132,10 @@ public class BallScript : MonoBehaviour {
 	IEnumerator viewGO(){
 
 		yield return new WaitForSeconds (2f);
+
 		g.SetActive (true);
+		GameObject scoreText = GameObject.Find ("InGameCanvas/Score");
+		scoreText.SendMessage ("finalScore");
 		Destroy (gameObject);
 	}
 
