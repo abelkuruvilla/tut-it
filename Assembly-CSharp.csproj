@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\ObstacleG.cs" />
      <Compile Include="Assets\Scripts\PointGenerate.cs" />
      <Compile Include="Assets\Scripts\ResolutionScript.cs" />
+     <Compile Include="Assets\Scripts\ScoreShow.cs" />
      <Compile Include="Assets\Scripts\Test\BallEnd.cs" />
      <Compile Include="Assets\Scripts\Test\Button.cs" />
      <Compile Include="Assets\Scripts\Test\ButtonScript.cs" />

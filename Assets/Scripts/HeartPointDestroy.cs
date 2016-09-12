@@ -20,4 +20,13 @@ public class HeartPointDestroy : MonoBehaviour {
 			Destroy(gameObject);
 
 	}
+	/*void OnCollisionEnter2D(Collision2D other){
+
+		if (other.gameObject.tag == "ball") {
+			Destroy (gameObject);
+		}
+
+		
+
+	} */
 }

@@ -12,18 +12,20 @@ public class PointGenerate : MonoBehaviour {
 	void Start () {
 		GameObject[] go = Resources.LoadAll<GameObject> ("points");
 		points = go.ToList ();
+		time= Random.Range(5f,9f);
+
+		StartCoroutine (generatePoint ());
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		setTime ();
-		StartCoroutine (generatePoint ());
+
 	
 	}
 
 	void setTime(){
-		time= Random.Range(5f,9f);
-
+		
 
 	}
 
@@ -32,6 +34,9 @@ public class PointGenerate : MonoBehaviour {
 		yield return new WaitForSeconds (time);
 
 		Instantiate (getObject (), getPosition (), Quaternion.identity);
+		time= Random.Range(5f,9f);
+		StartCoroutine (generatePoint ());
+
 	}
 
 	GameObject getObject(){
