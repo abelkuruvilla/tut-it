@@ -15,4 +15,13 @@ public class ButtonMethods : MonoBehaviour {
 
 		SceneManager.LoadScene ("Scenes/home");
 	}
+
+	public void playButton(){
+		SceneManager.LoadScene ("Scenes/Game");
+
+	}
+
+	public void exitButton(){
+		Application.Quit ();
+	}
 }

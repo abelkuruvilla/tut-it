@@ -11,8 +11,6 @@ GameObject:
   - 212: {fileID: 21240376}
   - 95: {fileID: 9530720}
   - 60: {fileID: 6000558}
-  - 114: {fileID: 11450496}
-  - 50: {fileID: 5072160}
   - 114: {fileID: 11472772}
   m_Layer: 0
   m_Name: heart
@@ -34,23 +32,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!50 &5072160
-Rigidbody2D:
-  serializedVersion: 2
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132858}
-  m_UseAutoMass: 0
-  m_Mass: 0.0001
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!60 &6000558
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -214,18 +195,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11450496
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132858}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c59771bf62fde9e4aa6d423c0606a1bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: -0.9
 --- !u!114 &11472772
 MonoBehaviour:
   m_ObjectHideFlags: 1
