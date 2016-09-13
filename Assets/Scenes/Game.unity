@@ -151,7 +151,7 @@ MonoBehaviour:
     m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.01
+    m_LineSpacing: 1.25
   m_Text: New Text
 --- !u!222 &46292710
 CanvasRenderer:
@@ -375,7 +375,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 416978, guid: 710be4f0d315b9a429230a3b6142b332, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6000558, guid: 710be4f0d315b9a429230a3b6142b332, type: 2}
       propertyPath: m_IsTrigger
@@ -3079,7 +3079,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2006098721}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.09, y: -3.89, z: 0}
+  m_LocalPosition: {x: 0.09, y: -2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.16923703}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []

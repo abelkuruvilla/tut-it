@@ -8,6 +8,7 @@ TagManager:
   - point
   - heart
   - ball
+  - diamond
   layers:
   - Default
   - TransparentFX

@@ -17,7 +17,7 @@ public class ObstacleG : MonoBehaviour {
 	void Start () {
 		
 		getObstacle ();
-		setSpeed (1.4f);
+		setSpeed (3f);
 		generateObstacles (1);
 
 

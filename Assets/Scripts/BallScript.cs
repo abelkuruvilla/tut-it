@@ -80,6 +80,7 @@ public class BallScript : MonoBehaviour {
 	void gameOver(){
 		
 		//anim.SetTrigger ("ballhit");
+		Handheld.Vibrate();
 		gameObject.GetComponent<SpriteRenderer>().enabled=false;
 		particle.gameObject.transform.position = gameObject.transform.position;
 		particle.SetActive (true);
@@ -118,6 +119,11 @@ public class BallScript : MonoBehaviour {
 			Destroy (other.gameObject);
 
 
+		}
+		if (other.gameObject.tag == "diamond") {
+			GameObject g = GameObject.Find ("InGameCanvas/Score");
+			g.SendMessage ("setScore",2);
+			Destroy (other.gameObject);
 		}
 	}
 
