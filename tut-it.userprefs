@@ -1,14 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DontDestroyMe.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PointGenerate.cs">
     <Files>
-      <File FileName="Assets\Scripts\BallScript.cs" Line="116" Column="39" />
+      <File FileName="Assets\Scripts\BackGroundMusic.cs" Line="12" Column="7" />
+      <File FileName="Assets\Scripts\BallScript.cs" Line="83" Column="1" />
       <File FileName="Assets\Scripts\ObstacleG.cs" Line="20" Column="14" />
       <File FileName="Assets\Scripts\ObstacleDestroy.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\TestScore.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PointGenerate.cs" Line="38" Column="37" />
+      <File FileName="Assets\Scripts\PointGenerate.cs" Line="13" Column="3" />
       <File FileName="Assets\Scripts\ButtonMethods.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ScoreShow.cs" Line="14" Column="3" />
+      <File FileName="Assets\Scripts\ScoreShow.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\HeartPointDestroy.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\DontDestroyMe.cs" Line="8" Column="34" />
     </Files>
