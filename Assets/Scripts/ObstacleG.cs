@@ -14,10 +14,13 @@ public class ObstacleG : MonoBehaviour {
 
 
 	// Use this for initialization
+	void Awake(){
+		getObstacle ();
+	}
 	void Start () {
 		
-		getObstacle ();
-		setSpeed (3f);
+		//getObstacle ();
+		speed=1.5f;
 		generateObstacles (1);
 
 
@@ -25,12 +28,14 @@ public class ObstacleG : MonoBehaviour {
 
 	void Update(){
 		if (g1 != null) {
+			g1.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, -speed);
 			if (checkPosition (1)) {
 				generateObstacles (2);
 
 			}
 		}
 		if (g2 != null) {
+			g2.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, -speed);
 			if (checkPosition (2)) {
 
 				generateObstacles (1);
@@ -45,16 +50,21 @@ public class ObstacleG : MonoBehaviour {
 	}
 	
 
-	void setSpeed(float f){
+	public void setSpeed(float f){
 
 		speed = f;
 
+		if(g1!=null)
+			g1.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, -speed);
+		if(g2!=null)
+			g2.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, -speed);
 	}
 
 
 	void generateObstacles(int opt){
 
-		obs = obstacle [Random.Range (0, obstacle.Count)];
+		obs = obstacle [Random.Range (0,obstacle.Count)];
+		//obs = obstacle [48];
 
 		if (opt == 1) {
 			g1 = Instantiate (obs);

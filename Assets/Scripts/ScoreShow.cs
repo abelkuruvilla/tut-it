@@ -20,9 +20,26 @@ public class ScoreShow : MonoBehaviour {
 	}
 
 	public void setScore(int extra){
+		GameObject speed;
+		speed = GameObject.Find ("Obstacle");
 		score = score + extra;
 		GetComponent<Text> ().text = score.ToString ();
+		if(score >= 5){
+			
+			speed.GetComponent<ObstacleG> ().setSpeed (2.2f);
 
+		}
+
+		else if(score >15){
+
+			speed.GetComponent<ObstacleG> ().setSpeed (2.6f);
+
+		}
+		else if(score >= 25){
+
+			speed.GetComponent<ObstacleG> ().setSpeed (3f);
+
+		}
 	}
 	public void finalScore(){
 		if (score >= highScore) {

@@ -6,15 +6,24 @@ using System.Linq;
 public class PointGenerate : MonoBehaviour {
 
 
-	List<GameObject> points;
+	GameObject heart,diamond;
 	float time;
+
+
+	void Awake(){
+		heart = Resources.Load<GameObject> ("points/heart");
+		diamond = Resources.Load<GameObject> ("points/DIAMOND3");
+
+	
+	}
 	// Use this for initialization
 	void Start () {
-		GameObject[] go = Resources.LoadAll<GameObject> ("points");
-		points = go.ToList ();
+		
+
 		time= Random.Range(5f,9f);
 
 		StartCoroutine (generatePoint ());
+		StartCoroutine (genHeart ());
 	}
 	
 	// Update is called once per frame
@@ -33,21 +42,13 @@ public class PointGenerate : MonoBehaviour {
 
 		yield return new WaitForSeconds (time);
 
-		Instantiate (getObject (), getPosition (), Quaternion.identity);
-		time= Random.Range(5f,9f);
+		Instantiate (heart, getPosition (), Quaternion.identity);
+		time= Random.Range(4f,6f);
 		StartCoroutine (generatePoint ());
 
 	}
 
-	GameObject getObject(){
-		GameObject g = points [Random.Range (0, points.Count)];
 
-		return g;
-
-
-
-
-	}
 
 	Vector3 getPosition(){
 
@@ -55,6 +56,14 @@ public class PointGenerate : MonoBehaviour {
 
 		return pos;
 
+
+	}
+	IEnumerator genHeart(){
+
+		yield return new WaitForSeconds(Random.Range(40,50));
+		Instantiate (diamond, getPosition (), Quaternion.identity);
+
+		StartCoroutine (genHeart ());
 
 	}
 

@@ -11,8 +11,7 @@ public class ObstacleDestroy : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (!this.GetComponent<SpriteRenderer> ().isVisible)
-			Destroy (gameObject);
+
 		if (this.transform.position.y <= -25f)
 			DestroyImmediate (gameObject);
 	}
